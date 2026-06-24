@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2d3436;
+        }
+
+        .box {
+            padding: 15px;
+            margin: 10px 0;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            border: 3px solid black;
+        }
+
+        /* BLOCK DISPLAY */
+        .block {
+            display: block;
+            width: 300px;
+            height: 60px;
+            background: #e74c3c;
+        }
+
+        /* INLINE DISPLAY */
+        .inline {
+            display: inline;
+            background: #3498db;
+            padding: 15px;
+            margin: 10px;
+        }
+        /* Note: inline mein width/height kaam nahi karte */
+
+        /* INLINE-BLOCK DISPLAY */
+        .inline-block {
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            background: #2ecc71;
+            margin: 10px;
+        }
+
+        /* NONE DISPLAY */
+        .none {
+            display: none;
+        }
+
+        .note {
+            background: #ffeaa7;
+            padding: 12px;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: #2d3436;
+        }
+
+        .note strong {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📦 CSS Display Property</h1>
+
+        <!-- 1. BLOCK -->
+        <h3 style="color: #e74c3c;">1️⃣ Block Display</h3>
+        <div class="box block">Block - Full Width (300px)</div>
+        <div class="box block">Block - Next Line</div>
+
+        <!-- 2. INLINE -->
+        <h3 style="color: #3498db;">2️⃣ Inline Display</h3>
+        <span class="box inline">Inline 1</span>
+        <span class="box inline">Inline 2</span>
+        <span class="box inline">Inline 3</span>
+
+        <!-- 3. INLINE-BLOCK -->
+        <h3 style="color: #2ecc71;">3️⃣ Inline-Block Display</h3>
+        <div class="box inline-block">Box 1</div>
+        <div class="box inline-block">Box 2</div>
+        <div class="box inline-block">Box 3</div>
+
+        <!-- 4. NONE -->
+        <h3 style="color: #636e72;">4️⃣ Display: None</h3>
+        <div class="box" style="background: #fdcb6e; color: #2d3436;">Visible Box</div>
+        <div class="box none" style="background: #e74c3c;">⬅️ This Box is HIDDEN</div>
+        <div class="box" style="background: #6c5ce7;">Visible Box</div>
+
+        <!-- Summary Note -->
+        <div class="note">
+            <strong>✅ Block:</strong> Full width, new line<br>
+            <strong>✅ Inline:</strong> Only text width, same line<br>
+            <strong>✅ Inline-Block:</strong> Same line + width/height work<br>
+            <strong>✅ None:</strong> Completely hidden (no space)
+        </div>
+    </div>
+
+</body>
+</html>

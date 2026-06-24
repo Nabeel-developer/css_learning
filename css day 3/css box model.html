@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            width: 350px;
+            min-height: 250px;
+            max-height: 400px;
+            padding: 30px;
+            border: 4px solid #2d3436;
+            margin: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .card h2 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .card p {
+            color: #636e72;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .card button {
+            background: #0984e3;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .card button:hover {
+            background: #074b8a;
+            transform: scale(1.05);
+        }
+
+        /* Info Box Showing Dimensions */
+        .info {
+            background: #dfe6e9;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #2d3436;
+        }
+
+        .info span {
+            font-weight: bold;
+            color: #0984e3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>📦 CSS Box Model</h2>
+        <p>This is the <strong>content</strong>. Every HTML element is a box with padding, border, and margin.</p>
+        <button>Click Me</button>
+        
+        <div class="info">
+            <strong>Box Properties:</strong><br>
+            Width: <span>350px</span><br>
+            Min-Height: <span>250px</span><br>
+            Max-Height: <span>400px</span><br>
+            Padding: <span>30px</span><br>
+            Border: <span>4px</span><br>
+            Margin: <span>20px</span><br>
+            Box-Sizing: <span>border-box</span> ✅
+        </div>
+    </div>
+
+</body>
+</html>

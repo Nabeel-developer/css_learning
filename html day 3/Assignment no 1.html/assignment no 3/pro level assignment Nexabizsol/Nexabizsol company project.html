@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexabizsol Job Application Portal</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Nexabizsol Job Application Portal</h1>
+        <p>Apply for your desired position at Nexabizsol.</p>
+    </header>
+
+    <hr>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#company">Company Information</a> |
+        <a href="#job">Job Description</a> |
+        <a href="#apply">Apply Now</a>
+    </nav>
+
+    <hr>
+
+    <!-- Company Information -->
+    <section id="company">
+        <h2>Company Information</h2>
+        <p>
+            Nexabizsol is a software company providing web development,
+            mobile app development, and digital solutions to clients worldwide.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Job Description -->
+    <section id="job">
+        <h2>Job Description</h2>
+
+        <h3>Web Developer</h3>
+
+        <p>
+            We are looking for a passionate Web Developer who has knowledge
+            of HTML, CSS, JavaScript, and modern web technologies.
+        </p>
+
+        <h4>Requirements:</h4>
+        <ul>
+            <li>Strong communication skills</li>
+            <li>Knowledge of web development</li>
+            <li>Teamwork and problem-solving skills</li>
+            <li>Ability to meet deadlines</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Application Form -->
+    <section id="apply">
+        <h2>Application Form</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name"
+                       required minlength="3"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email"
+                       required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="03XXXXXXXXX"
+                       required><br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Professional Information</legend>
+
+                <label for="experience">Experience (Years):</label><br>
+                <input type="number" id="experience" name="experience"
+                       min="0" max="30" required><br><br>
+
+                <label for="skills">Skills:</label><br>
+                <textarea id="skills" name="skills"
+                          rows="4" cols="40"
+                          placeholder="Enter your skills"
+                          required></textarea><br><br>
+
+                <label for="education">Education:</label><br>
+                <select id="education" name="education" required>
+                    <option value="">Select Education</option>
+                    <option>Matric</option>
+                    <option>Intermediate</option>
+                    <option>Bachelor's</option>
+                    <option>Master's</option>
+                    <option>PhD</option>
+                </select><br><br>
+
+                <label for="resume">Resume Upload:</label><br>
+                <input type="file" id="resume" name="resume"
+                       required><br><br>
+
+                <label for="portfolio">Portfolio URL:</label><br>
+                <input type="url" id="portfolio" name="portfolio"
+                       placeholder="https://yourportfolio.com"><br><br>
+
+                <label for="salary">Expected Salary:</label><br>
+                <input type="number" id="salary" name="salary"
+                       min="10000" required><br><br>
+
+                <label for="joining">Joining Date:</label><br>
+                <input type="date" id="joining" name="joining"
+                       required><br><br>
+
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nexabizsol. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
